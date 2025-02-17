@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBookList</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">MyBookList</h1>
+        
+        <div class="form-group">
+            <div class="row mb-3">
+                <div class="col">
+                    <input type="text" id="title" class="form-control" placeholder="Book Title">
+                </div>
+                <div class="col">
+                    <input type="text" id="author" class="form-control" placeholder="Author">
+                </div>
+                <div class="col">
+                    <input type="text" id="isbn" class="form-control" placeholder="ISBN#">
+                </div>
+                <div class="col-auto">
+                    <button id="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
 
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+            </tbody>
+        </table>
+    </div>
 </body>
-
 </html>
